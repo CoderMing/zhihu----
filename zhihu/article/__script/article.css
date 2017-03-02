@@ -1,0 +1,186 @@
+body, ul, li, p {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-family: "Arial", "weiruanyahei";
+	list-style: none;
+}
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	display: inline-block;
+}
+body {
+	min-width: 1100px;
+	background: #f7f8fa;
+}
+p {
+	font-size: 12px;
+}
+#main-cover {
+	background: rgba(0,0,0,.6);
+	width: 100vw;
+	height: 100vh;
+	margin: 63px 0;
+	position: fixed;
+	z-index: 9;
+	display: none;
+	transition: all .3s;
+}
+#top {
+	background: white;
+	z-index: 10;
+	position: fixed;
+	width: 100%;
+	height: 62px;
+	overflow: hidden;
+	box-shadow:0px 0px 1px 1px  #f7f8fa;
+}
+#top-main {
+	width: calc(100vw-60px);
+	height: 120px;
+	padding: 0 30px;
+	max-width: 1000px;
+	margin: 0 auto;
+	transition: all .3s ease-in-out;
+}
+#top-logo {
+	display: inline-block;
+	float: left;
+	width: 76px;
+	height: 35px;
+	margin: 13px 10px 10px 0;
+	background: url(./image/logo.png) no-repeat;
+	background-size: cover;
+}
+.top-link {
+	float: left;
+	height: 60px;
+	line-height: 65px;
+	font-size: 17px;
+	color: #9ea6b8;
+	text-align: center;
+	text-decoration: none;
+	margin: 0 15px;
+}
+#top-in {
+	float: left;
+	width: 320px;
+	height: 38px;
+	margin: 11px 20px; 
+	border-radius: 5px;
+	border: #e7eaf1 1px solid;
+	outline: none;
+	font-size: 15px;
+	padding: 0 10px;
+	background: #f7f8fa;
+	transition: all .4s;
+}
+#top-search {
+	float: left;
+	background: #2588eb;
+	color: white;
+	font-size: 15px;
+	width: 60px;
+	height: 38px;
+	line-height: 38px;
+	text-align: center;
+	margin: 12px 0 10px;
+	border-radius: 5px;
+	transition: transform .1s;
+	transform-origin: center center;  
+}
+#top-userimg {
+	float: right;
+	width: 30px;
+	height: 30px;
+	margin: 15px 0 15px 15px;
+	overflow: hidden;
+}
+#top-trans {
+	width: 100%;
+	height: 60px;
+	display: block;
+	overflow: hidden;
+}
+#top-trans-edit {
+	float: right;
+	display: inline-block;
+	margin: 11px 0;
+}
+#top-trans-userimg {
+	display: inline-block;
+	float: left;
+	width: 45px;
+	height: 45px;
+	margin: 6px 0;
+}
+#top-trans-list {
+	float: left;
+	margin: 3px;
+}
+
+
+
+
+
+
+
+
+
+
+/*向右浮动*/
+.right {
+	float: right;
+}
+/*白色模块通用边框*/
+.white-block {
+	background: white;
+	box-shadow: 0px 0px 2px 2px #eee;
+	border-radius: 5px;
+	overflow: hidden;
+}
+/*编辑资料通用框*/
+.edit-button {
+	color: #6e8fec;
+	height: 36px;
+	width: 120px;
+	border: 1px solid #6e8fec;
+	border-radius: 5px;
+	line-height: 36px;
+	font-size: 16px;
+	text-align: center;
+	cursor: pointer;
+}
+/*用户头像*/
+.user-img {
+	background: url(./image/user-img.jpg) no-repeat;
+	background-size: cover;
+	border-radius: 3px;
+}
+/*功能条*/
+.function-list {
+	height: 54px;
+	display: inline-block;
+	padding-left: 20px;
+}
+.function-list li {
+	display: inline-block;
+	font-size: 17px;
+	line-height: 54px;
+	text-align: center;
+	top: 1px;
+	height: 53px;
+	color: #555;
+	padding: 0 10px;
+	cursor: pointer;
+	margin: 0 12px;
+}
+.function-list-ACTIVE {
+	border-bottom: #2588eb 4px solid;
+	color: #000;
+}
+@media screen and (max-width: 1060px) {
+	.top-link {
+		display: none;
+	}
+}
